@@ -6,8 +6,9 @@ services:
     build: .
     container_name: docker-learning-api
     ports:
-      # host:container  →  http://localhost:3001 on your machine / Contabo
-      - "3001:3001"
+      # host:container — left side is the public VPS port.
+      # 3000 and 3001 are already used on this Contabo box.
+      - "3010:3001"
     environment:
       NODE_ENV: production
       PORT: 3001
