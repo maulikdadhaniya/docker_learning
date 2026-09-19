@@ -6,11 +6,11 @@ services:
     build: .
     container_name: docker-learning-api
     ports:
-      # host:container  →  http://localhost:3000 on your machine / Contabo
-      - "3000:3000"
+      # host:container  →  http://localhost:3001 on your machine / Contabo
+      - "3001:3001"
     environment:
       NODE_ENV: production
-      PORT: 3000
+      PORT: 3001
     # If the VPS reboots or the process crashes, start the container again.
     restart: unless-stopped
 
